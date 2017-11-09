@@ -1,0 +1,41 @@
+
+#player_overlay {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	background: #000;
+	opacity: 0.7;
+	z-index: 1000;
+	}
+
+#player_content {
+	width: auto;
+	height: auto;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 0px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 1001;
+	}
+
+#player_close {
+	width: 10vh;
+	height: 10vh;
+	display: none;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTU5NDA5ODY0QjE4MTFFNUFBQ0FCMTQyNTZGNzEyRDEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTU5NDA5ODc0QjE4MTFFNUFBQ0FCMTQyNTZGNzEyRDEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5NTk0MDk4NDRCMTgxMUU1QUFDQUIxNDI1NkY3MTJEMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5NTk0MDk4NTRCMTgxMUU1QUFDQUIxNDI1NkY3MTJEMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiTdSrEAAAF+SURBVHjapJZNSwMxEIZDL4KCV1Gq1t2utSqioj9XbG9+/BXxJJRSEA8qKrq6/bBUxfgGJhji5GPrwHNJJu/MTjLJCimlIM7ABNSNsbI0wTc412N6oiV/7Q2kU4hvgIGh09YBTuRfK0p+icp8yOicqskbyVsfNCLEN8HIoXGtHNYpY87Uwi2P+A4YO9aqUmfaUZXj1eE4JiFbfJcOBWc5WDM3WdBA7lgwIUHtuw8+HL7PYNU+RZoaeHEs/ASLxJfD5wksm5pcXVcoC85uCc4eQdXWc21elRbE2j19mYgNoFgCDxHid2DBpRM64xXQ8YhfhfqkIvw2C2YC8/NeBU/0lJolZKrjs7IlihUP3l2ceOLp6i7huhrSUIDEk7nKco4oYoPEXhWFVed6IEhiB6h5xF2bmHmC5KQpQuLDwJsQDKKcep63oBnx4DSsp9K0nmq0S6Y93sEh6IiwdcEBGDBzFzqL4yky58rVN3SO7FPUpprv/eO3ZZv2pKXHfgQYANgdLu4BU/uzAAAAAElFTkSuQmCC');
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	z-index: 1002;
+	cursor: pointer;
+	}
+#player_close:hover {
+	opacity: 1;
+	}

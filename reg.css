@@ -1,0 +1,227 @@
+#reg_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  opacity: 0.85;
+  z-index: 99;
+}
+#reg_block {
+  width: 480px;
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  margin: 0px 0px 0px -240px;
+  background: #141414;
+  z-index: 100;
+  padding-top: 20px;
+}
+#reg_block h2 {
+  margin: 3px 0px 21px;
+  color: #fff;
+  font: normal 28px/28px plumbcondensedregular, Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: default;
+}
+#reg_block .close {
+  width: 31px;
+  height: 31px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/close.png") center center no-repeat;
+  opacity: 0.85;
+  z-index: 2;
+  cursor: pointer;
+}
+#reg_block .close:hover {
+  opacity: 1;
+}
+#user-register {
+  position: relative;
+  margin: 0px 10px 0px 10px;
+}
+.reg_info {
+  display: block;
+  height: 70px;
+  margin: 0px;
+  padding: 27px 0px 5px;
+  font: 13px/19px Plumb, Arial, Helvetica, sans-serif;
+}
+#user-register fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+#user-register table,
+#user-register table td {
+  border: 0;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+#user-register .relative {
+  position: relative;
+}
+/* reg labels */
+.rfILabel {
+  width: 230px;
+  color: #999;
+  font: bold 16px/24px Plumb, Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+/* reg inputs */
+/*
+.rfIInput
+	width: 281px
+	height: 22px
+	position: relative
+*/
+.rfIInput input {
+  width: 458px;
+  height: 36px;
+  display: block;
+  margin: 6px 0px 10px 0px;
+  padding: 0px 10px 0px 10px;
+  color: #fff;
+  font: 17px Arial, Helvetica, sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #222;
+  box-shadow: inset 0 1px 8px #211d1e;
+  color: #575757;
+  line-height: 36px;
+}
+#mailru_domains {
+  width: 90px;
+  height: 36px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #a9c7eb;
+  font: 17px Plumb, Arial, Helvetica, sans-serif;
+  background: none;
+  border-top: none;
+  border-left: 1px solid #0d1927;
+  border-right: none;
+  border-bottom: none;
+  z-index: 2;
+}
+#EmailDisplayRow .rfIInput {
+  color: #999;
+  font: 16px/22px Plumb, Arial, Helvetica, sans-serif;
+  background: none;
+  white-space: nowrap;
+  cursor: default;
+}
+#EmailDisplayRow a {
+  color: #999;
+  font-size: 13px;
+}
+#EmailDisplayRow td {
+  height: 48px;
+  text-align: center;
+}
+#nrEmailFixed {
+  color: #ff3d00;
+  font-size: 20px;
+  display: block;
+}
+#EmailDisplayRow td > a:hover {
+  text-decoration: none;
+}
+#edit-captcha-response-wrapper {
+  height: 40px;
+}
+#edit-captcha-response {
+  width: 130px;
+  float: left;
+}
+#edit-captcha-response-wrapper > img {
+  width: 131px;
+  height: 36px;
+  float: right;
+  margin-top: 6px;
+}
+/* reg notes */
+.rfINote .position {
+  position: absolute;
+  right: -250px;
+  top: -27px;
+  width: 261px;
+}
+.rfINote .position > div {
+  width: 225px;
+  height: 50px;
+  display: table-cell;
+  padding: 0px 8px 0px 28px;
+  color: #dcdcdc;
+  font: 11px/14px Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/note.png") 0px 0px no-repeat;
+  overflow: hidden;
+  cursor: default;
+}
+.rfINote .position .rfNoteNote.rfNoteOk,
+.rfINote .position > #nrEmailPassOk,
+.rfINote .position > #nrLoginOk {
+  background-position: 0px -150px;
+}
+.rfINote .position > .rfNoteError,
+.rfINote .position > .rfNoteError a,
+.rfINote .position > #nrEmailError {
+  background-position: 0px -50px;
+}
+.rfINote .position > div a {
+  color: #dcdcdc;
+}
+.rfINote .position > div a:hover {
+  text-decoration: none;
+}
+#user-register > .rfNoteText {
+  width: 100%;
+  height: 44px;
+  padding-top: 15px;
+  color: #999;
+  font: 15px/18px Plumb, Arial, Helvetica, sans-serif;
+  border-top: 1px solid #3e3e3e;
+  cursor: default;
+  text-align: center;
+}
+#user-register > .rfNoteText a,
+.rfNoteNote a {
+  color: #dcdcdc;
+}
+#user-register > .rfNoteText a:hover,
+.rfNoteNote a:hover {
+  text-decoration: none;
+}
+/* reg button */
+#btn_register {
+  width: 100%;
+  padding-bottom: 20px;
+}
+#btn_register > input {
+  width: 460px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 0px;
+  color: #fff;
+  font: normal 19px/50px plumbcondensedregular, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: #fd4102 url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") 50% 0 no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#btn_register > input:hover {
+  background-color: #ff5a00;
+  background-position: 0px -74px;
+}

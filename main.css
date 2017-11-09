@@ -1,0 +1,618 @@
+@font-face {
+  font-family: 'plumbcondensedlight';
+  src: url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.eot");
+  src: url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.eot?#iefix") format('embedded-opentype'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.woff2") format('woff2'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.woff") format('woff'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.ttf") format('truetype'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOL-webfont.svg#plumbcondensedlight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'plumbcondensedregular';
+  src: url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.eot");
+  src: url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.eot?#iefix") format('embedded-opentype'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.woff2") format('woff2'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.woff") format('woff'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.ttf") format('truetype'), url("https://wf.cdn.gmru.net/static/wf.mail.ru/fonts/PLUMBCOR-webfont.svg#plumbcondensedregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+}
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  outline: none;
+  border: 0;
+  margin: 0;
+}
+body {
+  background: url("http://warface.gold/css/background.png") no-repeat center top;
+  background-color: #141414;
+}
+.pin__bt {
+  background: #ff4400;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font: 18px/50px Quantico, Arial, Helvetica, sans-serif;
+  padding: 0 42px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.wrapper {
+  width: 1260px;
+  min-height: 1020px;
+  margin: 0 auto;
+  position: relative;
+}
+.topblock {
+  height: 720px;
+  position: relative;
+}
+.user_auth {
+  font-family: plumbcondensedregular;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+.user_auth .pic {
+  background: #b2b2b2;
+  float: left;
+  font-size: 0px;
+  line-height: 0px;
+}
+.user_auth .name {
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.user_auth a {
+  color: #f40;
+  text-decoration: underline;
+  display: block;
+  float: left;
+  margin-top: 9px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.user_auth a:hover {
+  text-decoration: none;
+}
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 250px;
+}
+.logo .img {
+  width: 292px;
+  height: 40px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/logo.png") no-repeat 0 0;
+  overflow: hidden;
+  text-indent: -33333px;
+  display: block;
+}
+.logo p {
+  font-family: plumbcondensedregular;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  width: 410px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 40px 0px 20px 0px;
+}
+.logo .play {
+  width: 220px;
+  height: 40px;
+  background: #000;
+  font-family: plumbcondensedregular;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat center top;
+}
+.logo .play:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.mts_promo {
+  width: 744px;
+  height: 336px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/mts_text.png?v2") no-repeat 0 0;
+  position: absolute;
+  left: 500px;
+  top: 193px;
+}
+.mts_promo .block {
+  margin: 345px 0px 0px 65px;
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #fff;
+  font-size: 18px;
+}
+.mts_promo ol {
+  padding: 10px 0px 0px 40px;
+}
+.mts_promo ol li {
+  margin-bottom: 10px;
+}
+.main_block {
+  position: relative;
+}
+.cont_loader {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 130px;
+  background: url(https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/loader.gif) no-repeat 0 0;
+}
+.noreg {
+  padding: 50px 0 0 0;
+  text-align: center;
+  display: none;
+}
+.noreg h4 {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.noreg p {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #bfbfbf;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.noreg .buttons {
+  width: 350px;
+  height: 40px;
+  margin: 0px auto;
+}
+.noreg .buttons div {
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 50px;
+  background: #0a0a0a;
+  cursor: pointer;
+  float: left;
+}
+.noreg .buttons div:first-child {
+  margin-right: 20px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat center top;
+}
+.noreg .buttons div:first-child:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.noreg .buttons div:hover {
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat center top;
+}
+.doreg {
+  padding: 40px 0 0 0;
+  text-align: center;
+  display: none;
+}
+.doreg h4 {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.doreg .user_info {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #bfbfbf;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.doreg .user_info .nrEmailFixed2 {
+  color: #ff3900;
+  font-size: 32px;
+}
+.doreg .user_info a {
+  color: #bfbfbf;
+  text-decoration: underline;
+}
+.doreg .user_info a:hover {
+  text-decoration: none;
+}
+.doreg .reg_button {
+  display: block;
+  width: 480px;
+  height: 50px;
+  cursor: default;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat 50% 0;
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 19px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.doreg .reg_button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.activate {
+  padding: 50px 0 0 0;
+  text-align: center;
+  display: none;
+}
+.activate h4 {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.activate p {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #bfbfbf;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.activate p a {
+  color: #ff3900;
+  text-decoration: underline;
+}
+.activate p a:hover {
+  text-decoration: none;
+}
+.activate input {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 480px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 28px;
+  background: #0a0a0a;
+  border: 0;
+  border-bottom: 1px solid #232323;
+  outline: none;
+  text-transform: uppercase;
+}
+.activate #promo_code::-moz-placeholder {
+  color: #404040;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code:-moz-placeholder {
+  color: #404040;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code:-ms-input-placeholder {
+  color: #404040;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code::-webkit-input-placeholder {
+  color: #404040;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease;
+}
+.activate #promo_code:focus::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code:focus:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code:focus:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.activate #promo_code:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease;
+}
+.activate .button_activate {
+  display: block;
+  width: 480px;
+  height: 50px;
+  cursor: default;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_activate.png") no-repeat 50% 0;
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 19px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.activate .button_activate.act {
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat 50% 0;
+  cursor: pointer;
+}
+.activate .button_activate.act:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.modal_block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #141414;
+  padding: 30px 0 0 0;
+  min-height: 140px;
+  width: 480px;
+  z-index: 1001;
+  height: auto;
+  -webkit-transition: height 0.3s ease;
+          transition: height 0.3s ease;
+  display: none;
+}
+.modal_block .btn_close {
+  width: 24px;
+  height: 24px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/close.png") no-repeat 0 0;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  right: 10px;
+  top: -30px;
+}
+.modal_block .btn_close:hover {
+  opacity: 1;
+}
+.modal_block .button {
+  display: block;
+  width: 220px;
+  height: 40px;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_activate.png") no-repeat 50% 0;
+}
+.modal_block .button:hover {
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat 50% 0;
+}
+.modal_block .fail,
+.modal_block .check,
+.modal_block .done {
+  display: none;
+}
+.modal_block .fail h4,
+.modal_block .check h4,
+.modal_block .done h4 {
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modal_block .fail h4 {
+  margin-bottom: 30px;
+}
+.modal_block .fail .text,
+.modal_block .check .text,
+.modal_block .done .text,
+.modal_block .fail p,
+.modal_block .check p,
+.modal_block .done p {
+  font-family: plumbcondensedregular;
+  font-weight: normal;
+  color: #bfbfbf;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+}
+.modal_block .check {
+  padding: 0 0 30px 0;
+}
+.modal_block .check img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
+.modal_block .done {
+  padding: 0 0 10px 0;
+}
+.modal_block .done img {
+  display: block;
+  width: 320px;
+  height: 240px;
+  margin: 10px auto;
+}
+.modal_block .done p {
+  color: #fff;
+}
+.modal_block .done .text {
+  text-align: left;
+  min-height: 66px;
+}
+.modal_block .done .button_client {
+  display: block;
+  width: 460px;
+  height: 50px;
+  background: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/button_hover.png") no-repeat 50% 0;
+  cursor: pointer;
+  margin: 0 auto 10px auto;
+  color: #fff;
+  font-family: plumbcondensedregular;
+  font-size: 19px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.modal_block .done .button_client:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+body #player_close {
+  background-image: url("https://wf.cdn.gmru.net/static/wf.mail.ru/promo/mts/2/images/close.png");
+}
+
+/* --- Footer --- */
+
+body footer {
+	background: #000;
+	}
+	
+/*
+.content.footer {
+  height: 200px;
+  padding: 20px 0px;
+  background: #000;
+}
+.logo_cont {
+  height: 56px;
+  font-size: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.logo_cont > a,
+.logo_cont > img {
+  margin: 0px 0px;
+  outline: none;
+}
+.copyrights {
+  margin-bottom: 12px;
+  padding: 16px 0px;
+  color: #4b4e52;
+  font: 13px/18px PlumbRegular, Arial, Helvetica, sans-serif;
+  text-align: center;
+  cursor: default;
+}
+.copyrights a {
+  color: #6c6c6c;
+  text-decoration: none;
+}
+.copyrights a:hover {
+  text-decoration: underline;
+}
+.counters {
+  font-size: 0px;
+  text-align: center;
+}
+.counters a {
+  margin: 0px 6px;
+}*/
+
+#userreg_link {
+  color: #ff3900;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#userreg_link:hover {
+  text-decoration: none;
+}
+.gifts__item {
+	border: 2px solid rgba(88,88,88,.3);
+    background: rgba(88,88,88,.3) center center no-repeat;
+    position: relative;
+    color: #aeaeae;
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 -2px -2px;
+    font-family: plumbcondensedlight;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+    width: 364px;
+    height: 136px;
+}
+.gifts__item__title {
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.gifts__item__price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.gifts__item__label {
+    background: #ff4e00;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px 4px 3px;
+    line-height: 16px;
+    width: 70px;
+    height: 24px;
+}
+.gifts__item:hover{border: 2px solid #ff6804}
+.gifts__item:active{border: 2px solid #ff6804}
+.prizes_last {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+.prizes_last .txt {
+    font: normal 28px/30px plumbcondensedlight;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.prizes_last .line {
+    height: 4px;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    background: #0a0a0a;
+}
+.prizes_last .line div {
+    height: 4px;
+    background: #ff4e00;
+}
